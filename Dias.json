@@ -1,0 +1,148 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Dias",
+				"abbreviation": "DI",
+				"full": "Dias",
+				"url": "",
+				"authors": [
+					"Dias"
+				],
+				"convertedBy": [
+					"Dias"
+				]
+			}
+		]
+	},
+	"spell": [
+		{
+			"name": "Chromatic Orb X",
+			"source": "Dias",
+			"page": 0,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a diamond worth at least 50 gp",
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You hurl a 4-inch-diameter sphere of energy at a creature that you can see within range. You choose acid, cold, fire, lightning, poison, or thunder for the type of orb you create, and then make a ranged spell attack against the target. If the attack hits, the creature takes {@damage 3d8} damage of the type you chose."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Theatre of Death",
+			"source": "Dias",
+			"page": 0,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of blood from the 2 targets"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You attempt to send 2 creatures to a demi-plane called the Theatre of Death. You choose 2 creatures you can see within range that, you have the blood of, and 1 must be a willing creature that is not magically created/conjured. The unwilling target must make a {@bold charisma saving throw} or both of the targets will be teleported to the Theatre of Death.",
+				"The 2 targets remain inside the Theatre of Death until 1 of them dies or until the the spell ends. The form of the demi-plane is of a dueling stage that reflects your patron. While inside, creatures are subjected to the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Each creatures receives {@dice 2d6} necrotic damage at the end of their turns.",
+						"Each creature can communicate with you telepathically.",
+						"If a creature dies inside the Theatre of Death, that creature is turned into an undead claimed by your patron. ",
+						"if a creature attempts to do interplanar travel to leave the Theatre of Death, it must first succeed on a Charisma saving throw. if it succeeds then it may leave the Theatre of Death before the spell ends."
+					]
+				},
+				"When the spell ends, the creatures inside the Theatre of Death that are still alive reappears in the space it left or in the nearest unoccupied space if that space is occupied. If the targets were sent to the Theatre of Death but the spell ends while both targets are still alive, you receive {@dice 8d6} necrotic damage."
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SGT",
+				"TP"
+			],
+			"meta": {
+				"ritual": true
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"MT"
+			]
+		}
+	]
+}
